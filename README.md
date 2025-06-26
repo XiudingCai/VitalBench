@@ -1,4 +1,4 @@
-# MambaTS
+# VitalBench
 
 The repo is the official implementation for the paper: VitalBench: A Rigorous Multi-Center Benchmark for Long-Term Vital Sign Prediction in Intraoperative Care (arxiv version will be available soon).
 
@@ -17,9 +17,17 @@ The repo is the official implementation for the paper: VitalBench: A Rigorous Mu
     pip install mamba-ssm
     ```
 
-3. Prepare Data. You can obtain the well pre-processed datasets from public channel like [[Google Drive]](https://drive.google.com/drive/folders/13Cg1KYOlzM5C7K8gK8NfC-F3EYxkM3D2?usp=sharing) or [[Tsinghua Cloud]](https://cloud.tsinghua.edu.cn/f/2ea5ca3d621e4e5ba36a/), Then place the downloaded data in the folder`./dataset`. 
+3. Prepare Data. 
 
-4. Train and evaluate model. We provide the experiment scripts for MambaTS under the folder `./scripts/`. You can reproduce the experiment results as the following examples:
+For this benchmark, we use two publicly available datasets:
+
+- VitalDB: A multi-center, real-time monitoring dataset of intraoperative vital signs. It consists of data from over 4,000 surgeries across multiple hospitals, providing time-series data on various physiological variables such as heart rate, blood pressure, and oxygen saturation. You can access the dataset at VitalDB.
+
+- MOVER: A dataset from the MOVER-SIS project, containing vital sign time series and corresponding clinical labels, designed for anesthesia monitoring tasks. The dataset includes data from multiple hospitals and is freely accessible at MOVER.
+
+The processed dataset, including the necessary preprocessing steps, will be made publicly available in the future to facilitate reproducibility and extend the impact of our work.
+
+4. Train and evaluate model. We provide the experiment scripts for all baselines under the folder `./scripts/`. You can reproduce the experiment results as the following examples:
 
     ```
     # VitalDB
